@@ -1,26 +1,28 @@
 body{
-  background-color: rgb(10, 75, 173);
+  background-image: url("https://cdn.hipwallpaper.com/i/46/41/FpiCtk.png");
 }
   
 h1 {
       text-align: center;
-    background-color: rgba(195, 236, 9, 0.986);
+    background-color: rgba(9, 236, 28, 0.986);
     color: rgb(0, 17, 255);
+  }
+  
+  form {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    margin-bottom: 10px;
   }
   form {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    background-color: rgba(255, 102, 0, 0.952);
+    background-color: rgba(119, 0, 56, 0.952);
   }
   form input {
-    padding: 4px 8px;
+    padding: 3px 5px;
     flex-grow: 1;
-    margin-right: 16px;
-  }
-  .todo {
-    display: flex;
-    flex-direction: column;
+    margin-right: 12px;
   }
   
   button {
@@ -28,34 +30,5 @@ h1 {
     background-color: rgb(217, 35, 35);
     color: #fff;
     border-radius: 8px;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: rgb(173, 47, 28);
-  }
-  button:active {
-    background-color: rgb(130, 21, 21);
-  }
-  button:focus {
-    outline: 4;
-  }
-  input[type='text'] 
-  { font-size: 20px; font-family: monospace; }
-  .todo input[type="checkbox"] 
-  {
-    transform: scale(1.8) translateY(1px);
-    margin: 0 16px 0 0;
-    cursor: pointer;
-  }
-  .todo-text input {
-    padding: 4px;
-  }
-  .todo-text {
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
+    padding: 6px 12px;
   }
