@@ -3,13 +3,16 @@ import Task from "./Task";
 import "./App.css";
 
 const App = () => {
-  const [tasks, setTasks] = useState([]);
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [date, setDate]= useState("");
-  const [filter, setFilter]= useState("");
-  const [dontShow, setDontShow]= useState([]);
+  const [tasks, setTasks] = useState([]); /* This holds the tasks variable */
+  const [title, setTitle] = useState("");/* This holds the title of the task variable */
+  const [description, setDescription] = useState("");/* This holds the description variable */
+  const [date, setDate]= useState("");/* This holds the date variable */
+  const [filter, setFilter]= useState("");/* This holds the filter variable */
+  const [dontShow, setDontShow]= useState([]);/* This holds the dontShow variable */
 
+  /* This is the add task function. We create a new task variable and set the variables for a new function.
+  After all variables are set and we have stored their values, we add to a new task array and therefore
+  add a task */
   const addTask = () => {
     const newTask = {
       title: title,
@@ -60,7 +63,11 @@ all we were doing is deleting a task and adding a new one. */
       setTasks(newTasks);
 
   }
-
+/* This is the filter tasks function. I first made it case-insensitive through making the filterBy parameter
+to lower case and made it the parameter to the setFilter variale. I made a newDontShow empty array where I used a
+for loop to loop through all tasks and made a toSearch variables where all strings (title, description, date, priority)
+were combined and set to lower case, making it case insensitive. I pushed out all tasks that didn't meet the filter
+search and threw them away and showed the ones that did. */
   const filterTasks=(filterBy)=> {
     filterBy=filterBy.toLowerCase();
       setFilter(filterBy);
